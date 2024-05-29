@@ -20,4 +20,9 @@ def find_sum_of_three(nums, target):
    return False
 ```
 
-Sort array, enumerate returns pairs of index and value, at each iteration we're checking triplet of index, low, and high and if it equals target return True, if greater than the target we decrement high, if less than the target we increment low.
+- Sort array
+- enumerate returns pairs of index and value
+- at each iteration we're checking triplet of index, low, and high
+- if it equals target return True
+- if greater than the target we decrement high
+- if less than the target we increment low.

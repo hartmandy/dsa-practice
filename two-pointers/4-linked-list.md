@@ -1,6 +1,6 @@
 ### Linked List
 
-Linked list is a data structure similar to array in a sense that it stores bunch of items. But unlike array, linked lists are not stored in contiguous memory locations. They are instead chained by an element storing address location of next element. This makes insertion very easy. Also unlike dynamic arrays you don't have to pre-allocate some memory capacity.
+Linked list is a data structure similar to array in a sense that it stores a bunch of items. But unlike array, linked lists are not stored in contiguous memory locations. They are instead chained by an element storing address location of next element. This makes insertion very easy. Also unlike dynamic arrays you don't have to pre-allocate some memory capacity.
 
 Video: https://www.youtube.com/watch?v=qp8u-frRAnU
 
@@ -91,12 +91,4 @@ class LinkedList:
         self.head = None
         for data in data_list:
             self.insert_at_end(data)
-```
-
-## Remove nth Node from End of List
-
-❔Given a singly linked list, remove the nth node from the end of the list and return its head.
-
-```python
-
 ```

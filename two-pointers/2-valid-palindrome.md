@@ -15,4 +15,9 @@ def is_palindrome(s):
   return True
 ```
 
-Defined the two pointers, wrote a while loop and converged the two pointers, each iteration checking if start and end points are not equal and returning False if they arent. If we get through the while loop without returning False, we return True.
+- Initialize two pointers: start at the beginning and end at the end of the string.
+- Use a while loop to move the pointers towards the center.
+- Inside the loop, compare characters at start and end.
+- If characters are not equal, return False.
+- Move the pointers inward (increment start, decrement end).
+- If the loop completes without finding a mismatch, return True.
