@@ -5,6 +5,7 @@
 ```python
 def find_sum_of_three(nums, target):
    nums.sort()
+   # enumerate to go through each element and utilize counter on each item
    for index, value in enumerate(nums):
       low = index +1
       high = len(nums)-1
