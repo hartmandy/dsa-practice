@@ -1,0 +1,45 @@
+/* Basic styling for the button and container */
+.like-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.like-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid gray;
+  background-color: white;
+  color: gray;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.heart {
+  margin-right: 8px;
+}
+
+/* Hover state */
+.like-button:hover {
+  color: red;
+  border-color: red;
+}
+
+/* Liked state */
+.like-button.liked {
+  background-color: red;
+  color: white;
+}
+
+/* Liked state heart */
+.like-button.liked .heart {
+  color: white;
+}
+
+/* Loading state */
+.like-button.loading {
+  cursor: not-allowed;
+}
