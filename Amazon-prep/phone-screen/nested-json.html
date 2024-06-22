@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directory Tree</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="directory-tree"></div>
+    <script>
+      const directoryData = {
+        name: "root",
+        type: "directory",
+        children: [
+          {
+            name: "folder1",
+            type: "directory",
+            children: [
+              {
+                name: "file1.txt",
+                type: "file",
+              },
+              {
+                name: "file2.txt",
+                type: "file",
+              },
+            ],
+          },
+          {
+            name: "folder2",
+            type: "directory",
+            children: [
+              {
+                name: "subfolder",
+                type: "directory",
+                children: [
+                  {
+                    name: "file3.txt",
+                    type: "file",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      };
+
+      const directoryTreeElement = document.getElementById("directory-tree");
+      renderDirectoryTree(directoryData, directoryTreeElement);
+
+      function renderDirectoryTree(directory, parentElement) {
+        const ul = document.createElement("ul");
+        parentElement.appendChild(ul);
+
+        directory.children.forEach((item) => {
+          const li = document.createElement("li");
+          ul.appendChild(li);
+
+          const span = document.createElement("span");
+          span.textContent = item.name;
+          li.appendChild(span);
+
+          if (item.type === "directory") {
+            renderDirectoryTree(item, li);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
