@@ -2,6 +2,8 @@
 
 An object goes through different events in its existence: creation, updating, and deletion. The lifecycle methods of React allow developers to manipulate that object during very specific times of that object’s life. To use the lifecycle methods, you have to use a React class component. Then, just define the method within the class.
 
+### Historically, class components were used for managing state. But now, with hooks, functional components can do the same thing.
+
 ## constructor()
 
 This is the first method that a React component will go through. It will only happen once. This method is only needed if you plan on altering the original constructor method or if you plan on setting state.
