@@ -30,3 +30,18 @@ function InputField() {
 
 export default InputField;
 ```
+
+```js
+// why do we use this array syntax?
+const [stateVar, setStateVar] = useState();
+
+// somewhere in react they return an array
+function useState() {
+  // some code stuff
+
+  // we return an array
+  return [state, setState];
+}
+
+// This allows us to name the state variable and the setState function whatever we want.
+```
