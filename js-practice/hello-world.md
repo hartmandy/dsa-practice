@@ -2,9 +2,6 @@ JS Commands
 
 - document.getElementById
 - document.getElementById('root').innerHTML
-
-Can looks for name, length, etc.
-
 - var x = document.getElementById("btn1").name
 
 ```html
