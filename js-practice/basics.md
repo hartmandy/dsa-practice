@@ -51,8 +51,8 @@ All Types
 - Assignment Operators assign values to variables
 
 ```
-  - =
-  - += (x += y same as x = y)
+  - = (same as x = y)
+  - += (x += y same as x = x + y)
   - -= (x -= y same as x = x - y)
   - _= (x _= y same as x = x \* y)
   - /= (x /= y same as x = x / y)
@@ -173,43 +173,3 @@ const date = new Date("2022-03-25");
 
 - The object data type can contain both built-in objects, and user defined objects:
 - Built-in object types can be: objects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more.
-
-### JS Objects
-
-- Objects are containers for Properties and Methods.
-- Properties are named Values
-- Methods are Functions stored as Properties.
-- Properties can be primitive values, functions, or even other objects.
-- Objects are mutable: They are addressed by reference, not by value.
-
-Building an Object
-
-- An object literal is a list of name:value (key:value) pairs inside curly braces {}.
-- You can also create an object using new Object(), and then adds 4 properties, but it isn't commonly used.
-
-```js
-// Create an Object
-const person = new Object();
-
-// Add Properties
-person.firstName = "John";
-person.lastName = "Doe";
-person.age = 50;
-person.eyeColor = "blue";
-```
-
-Methods
-
-- Methods are actions that can be performed on objects.
-- Methods are function definitions stored as property values.
-
-```js
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  id: 5566,
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
-  },
-};
-```
